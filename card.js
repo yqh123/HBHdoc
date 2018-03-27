@@ -30,7 +30,6 @@ var config = {
         if (params.token) {
             params.token = params.token.replace("dmp ", "");
         }
-        alert('执行开始')
 
         return $.ajax({
             dataType: "json",
@@ -41,7 +40,6 @@ var config = {
                 "Authorization": config.token
             },
             success: function (data) {
-                alert('ajax执行')
                 if (data.code === 0 || data.code === 1004) {
                     callback(data)
                 } else {

@@ -49,7 +49,7 @@ var config = {
                 }
             },
             error: function(err) {
-                alert(JSON.stringify(err));
+                alert('网络错误')
             }
         });
     },

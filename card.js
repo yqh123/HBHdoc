@@ -48,6 +48,9 @@ var config = {
                 } else {
                     alert(data.message);
                 }
+            },
+            error: function() {
+                alert('执行失败')
             }
         });
     },

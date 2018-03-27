@@ -49,7 +49,7 @@ var config = {
                 }
             },
             error: function(err) {
-                alert(err);
+                alert(JSON.stringify(err));
             }
         });
     },

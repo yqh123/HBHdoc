@@ -19,7 +19,7 @@
 				<a href="./backstageExplanation.html" class="writee-color333">后台操作讲解</a>
 				<a href="./standard.html" class="writee-color333 activeIn active">前端规范</a>
 				<a href="./cuttingPlate.html" class="writee-color333">商家切板教程</a>
-				<a href="./mailboxEDM.html" class="writee-color333">EDM制作规范</a>
+				<!-- <a href="./mailboxEDM.html" class="writee-color333">EDM制作规范</a> -->
 				<a href="./special.html" class="writee-color333">项目中的特殊效果</a>
 				<a href="./commonJs.html" class="writee-color333">项目常用JS效果</a>
 				<a href="../specialEffects/btn_collection/html/btn_doc.html" class="writee-color333">按钮特效合集</a>
@@ -64,7 +64,7 @@
 							<img src="../images/weddingExpoFile-page-img17.png">
 							<img src="../images/weddingExpoFile-page-img18.png">
 						</div>
-						<p class="info"><span class="spancolor">【第二步】：</span>为什么要这么麻烦的分类，一个是便于管理，还有一个是便于统计；比如我们每次都会在展后做一个统计，让你写出你在2017年某一届的时间范围类做了多少个“公司自创专题页面”（EDM也属于这里），多少个“商家切板专题页面”，分别支援过哪些城市，并做了多少个页面，只要你能答出来，上面的的文件分类可以不用遵循。</p>
+						<p class="info"><span class="spancolor">【第二步】：</span>为什么要这么麻烦的分类，一个是便于管理，还有一个是便于统计；比如我们每次都会在展后做一个统计，让你写出你在2017年某一届的时间范围类做了多少个“公司自创专题页面”，多少个“商家切板专题页面”，分别支援过哪些城市，并做了多少个页面，只要你能答出来，上面的的文件分类可以不用遵循。</p>
 					</div>
 				</div>
 				<div class="page js-page-title" id="standard-html">
@@ -251,6 +251,22 @@ weddingExpoFile.carouselFigure = function(){
 				<div class="page js-page-title" id="make">
 					<div class="title">
 						<i></i>
+						<h3>页面制作规范：img</h3>
+					</div>
+					<div class="content">
+						<p class="info">
+							由于专题页面会用到很多图片，虽然在视觉上有很不错的体验，但在用户打开该页面时，却往往因为页面体积过大，而导致加载时间过长，影响用户体验。所以有必要对专题页面图片做优化处理，在尽量保证页面视觉效果上，也要兼顾用户加载页面体验。</br>
+						</p>
+						<p class="info">
+							<span class="spancolor">专题页面图片规则：</span></br>
+							1---头图：前端在切头图部分时，尽量把头图切割成多块，分块加载；或者使用图片压缩工具去压缩一次也行，pc端把头图大小维持在500KB以内，wap端维持在100KB以内，并且以jpg格式的为主</br>
+							2---切图规范：图片尽量切成jpg的，对于一些容量比较大的图片，也要进行一次图片压缩处理（在你的图片文件夹里面，鼠标右键-按大小排序），就可以找到容量比较大的图；对于png的图片，以png-8和png-24为基准，能8的就8，不能就png24；图片质量以60~80为准，先采用60的，失真的话，就慢慢往上加</br>
+						</p>
+					</div>
+				</div>
+				<div class="page js-page-title" id="make">
+					<div class="title">
+						<i></i>
 						<h3>专题页面制作流程</h3>
 					</div>
 					<div class="content">
@@ -264,6 +280,7 @@ weddingExpoFile.carouselFigure = function(){
 							3---设计拿到文档后可以在里面做需求补充</br>
 							4---设计确认后发给前端制作</br>
 							5---如果在制作的过程中，设计部门或顾问那边对需求有变更，要及时告知前端，前端在做页面的更改</br>
+							6---流程也可能不是按上面走的，有时候设计做完图后就直接跟你口述了（页面没多少要说的时往往这样），所以具体流程也是更具具体要求走的，只是在页面要求比较多时，还是建议有个需求文档给到前端，这样不容易出错</br>
 						</p>
 					</div>
 				</div>
@@ -293,7 +310,7 @@ weddingExpoFile.carouselFigure = function(){
 					</div>
 					<div class="content">
 						<p class="info">
-							以上的绝大部分都是“自创专题”页面需要遵循的规范，为了提高工作效率，我们这边也写好了“自创专题模版”，在你下载的文件包里面有此文件（包含pc和wap），如果觉得自己创建文件麻烦的话，可以直接使用这个已经写好的模板文件。</br>
+							以上的绝大部分都是“自创专题”页面需要遵循的规范，为了提高工作效率，我们这边也写好了“自创专题模版”，在你下载的文件包里面有此文件（包含pc和wap），如果觉得自己创建文件麻烦的话，可以直接使用这个已经写好的模板文件（采用的是less编译css）</br>
 							<div class="info-img">
 								<img src="../images/weddingExpoFile-page-img22.png">
 								<img src="../images/weddingExpoFile-page-img23.png">
